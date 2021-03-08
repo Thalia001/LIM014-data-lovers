@@ -47,3 +47,30 @@ describe("Filtrado por opciones", () => {
     ).toStrictEqual(result);
   });
 });
+
+//FILTRADO POR ORDEN
+describe("Ordenar personajes de la A-Z Z-A", () => {
+  it("is a function", () => {
+    expect(typeof orderCharacters).toBe("function");
+  });
+
+  const data = [{ name: "Morty" }, { name: "Zarbadar" }, { name: "Abadango" }];
+
+  it("returns characters order of A-Z", () => {
+    const resultOrder = [
+      { name: "Abadango" },
+      { name: "Morty" },
+      { name: "Zarbadar" },
+    ];
+    expect(orderCharacters(data, false)).toStrictEqual(resultOrder);
+  });
+
+  it("returns characters order of A-Z", () => {
+    const resultDesort = [
+      { name: "Zarbadar" },
+      { name: "Morty" },
+      { name: "Abadango" },
+    ];
+    expect(orderCharacters(data, true)).toStrictEqual(resultDesort);
+  });
+});

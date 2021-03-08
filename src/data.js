@@ -26,3 +26,12 @@ export const getFilterCharactersByOptions = (optionName, optionValue, data) => {
 
   return filteredData;
 };
+// Función para ordenar los personajes
+export const orderCharacters = (allData,desc) => {
+  return allData.sort(function (a, b) {
+     if (a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()) return desc?1:-1;
+     if (a.name.toLocaleLowerCase() > b.name.toLocaleLowerCase()) return desc?-1:1;
+     return 0;
+   });
+ };
+ 
