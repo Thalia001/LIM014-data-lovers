@@ -65,7 +65,7 @@ describe("Ordenar personajes de la A-Z Z-A", () => {
     expect(orderCharacters(data, false)).toStrictEqual(resultOrder);
   });
 
-  it("returns characters order of A-Z", () => {
+  it("returns characters order of Z-A", () => {
     const resultDesort = [
       { name: "Zarbadar" },
       { name: "Morty" },
