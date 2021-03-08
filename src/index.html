@@ -1,241 +1,402 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <!--SCREEN WELCOME-->
-  <section class="screen-one">
-    <div class="video-welcome">
-      <video muted loop autoplay>
-        <source src="video/rms.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="overlay"></div>
-    <div class="text-welcome">
-      <h1>Bienvenido al mundo de Rick and Morty</h1>
-      <p>En esta página conocerás un poco más de la serie</p>
-      <a href="#" class="BtnWelcome opc-character">Entrar</a>
-    </div>
-  </section>
-  <!--SCREEN CHARACTER-->
-  <div class="container-screen-two">
-    <section class="screen-two">
-      <!-- OPCIONES DE FILTRO-->
-      <aside class="section-option">
-        <nav>
-          <button id="allCharacterBtn">Todos los personajes</button>
-          <ul class="list-opc">
-            <li class="list-origin">
-              <input type="checkbox" name="acordeon" id="item1" />
-              <label for="item1" class="acordeon__titulo">Origen</label>
-              <ul class="acordeon_contenido">
-                <li>
-                  <input type="radio" id="opcEarth" name="origen" value="Earth (C-137)" />
-                  <label for="opcEarth">Tierra</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcEarthRD" name="origen" value="Earth (Replacement Dimension)" />
-                  <label for="opcEarthRD">Replacement<br />Dimension</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcAnatomy" name="origen" value="Anatomy Park" />
-                  <label for="opcAnatomy">Anatomy Park</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcPluto" name="origen" value="Pluto" />
-                  <label for="opcPluto">Pluto</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcNuptia" name="origen" value="Nuptia 4" />
-                  <label for="opcNuptia">Nuptia 4</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcBepis" name="origen" value="Bepis 9" />
-                  <label for="opcBepis">Bepis 9</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcInterdimensional" name="origen" value="Interdimensional Cable" />
-                  <label for="opcInterdimensional">Interdimensional<br />Cable</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcUnknownOrigen" name="origen" value="unknown" />
-                  <label for="opcUnknownOrigen">Desconocido</label>
-                </li>
-              </ul>
-            </li>
-            <li class="list-species">
-              <input type="checkbox" name="acordeon" id="item2" />
-              <label for="item2" class="acordeon__titulo">Especie</label>
-              <ul class="acordeon_contenido">
-                <li>
-                  <input type="radio" id="opcHuman" name="species" value="Human" />
-                  <label for="opcHuman">Humano</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcAlien" name="species" value="Alien" />
-                  <label for="opcAlien">Aliens</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcHumanoid" name="species" value="Humanoid" />
-                  <label for="opcHumanoid">Humanoide</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcPoopy" name="species" value="Poopybutthole" />
-                  <label for="opcPoopy">Poopybutthole</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcDisease" name="species" value="Disease" />
-                  <label for="opcDisease">Virus</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcRobot" name="species" value="Robot" />
-                  <label for="opcRobot">Robots</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcCronenberg" name="species" value="Cronenberg" />
-                  <label for="opcCronenberg">Cronenbergs</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcMytholog" name="species" value="Mytholog" />
-                  <label for="opcMytholog">Mitólogicos</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcAnimal" name="species" value="Animal" />
-                  <label for="opcAnimal">Animals</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcParasite" name="species" value="Parasite" />
-                  <label for="opcParasite">Parasito</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcVampire" name="species" value="Vampire" />
-                  <label for="opcVampire">Vampiros</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcUnknownSpecie" name="species" value="unknown" />
-                  <label for="opcUnknownSpecie">Desconocido</label>
-                </li>
-              </ul>
-            </li>
-            <li class="list-gender">
-              <input type="checkbox" name="acordeon" id="item3" />
-              <label for="item3" class="acordeon__titulo">Gender</label>
-              <ul class="acordeon_contenido">
-                <li>
-                  <input type="radio" id="opcMale" name="gender" value="Male" />
-                  <label for="opcMale">Masculino</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcFemale" name="gender" value="Female" />
-                  <label for="opcFemale">Femenino</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcGenderless" name="gender" value="Genderless" />
-                  <label for="opcGenderless">Sin género</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcUnknownGender" name="gender" value="unknown" />
-                  <label for="opcUnknownGender">Desconocido</label>
-                </li>
-              </ul>
-            </li>
-            <li class="list-status">
-              <input type="checkbox" name="acordeon" id="item4" />
-              <label for="item4" class="acordeon__titulo">Status</label>
-              <ul class="acordeon_contenido">
-                <li>
-                  <input type="radio" id="opcAlive" name="status" value="Alive" />
-                  <label for="opcAlive">Vivo</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcDead" name="status" value="Dead" />
-                  <label for="opcDead">Muerto</label>
-                </li>
-                <li>
-                  <input type="radio" id="opcUnknownStatus" name="status" value="unknown" />
-                  <label for="opcUnknownStatus">Desconocido</label>
-                </li>
-              </ul>
-            </li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <section id="header">
+      <header>
+        <h1 class="logo">R&M</h1>
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu">
+          <img width="30" height="30" src="imagenes/menu.png" />
+        </label>
+        <nav class="menu">
+          <ul class="menu-items">
+            <li><a id="opc-curisidades">Curiosidades</a></li>
+            <li><a id="opc-resumen">Resumen</a></li>
+            <li><a class="opc-character">Personajes</a></li>
           </ul>
         </nav>
-      </aside>
-      <div class="section-characters">
-        <!-- SECCIÓN DE BUSQUEDA-->
-        <article class="search-order">
-          <input type="text" id="inputSearch" placeholder="Busca tu personaje favorito" />
-          <div class="order-option">
-            <h4>Ordena por:</h4>
-            <button id="A-Z">A-Z</button>
-            <button id="Z-A">Z-A</button>
-          </div>
-        </article>
-        <!-- CONTAINER CHARACTER -->
-        <article class="list" id="list">
-        </article>
-        <div id="pagination"></div>
+      </header>
+    </section>
+    <!--SCREEN WELCOME-->
+    <section class="screen-one">
+      <div class="video-welcome">
+        <video muted loop autoplay>
+          <source src="imagenes/rms.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="overlay"></div>
+      <div class="text-welcome">
+        <h1>Bienvenido al mundo de Rick and Morty</h1>
+        <p>En esta página conocerás un poco más de la serie</p>
+        <a href="#" class="BtnWelcome opc-character">Entrar</a>
       </div>
     </section>
-  </div>
-  <!--SCREEN CURIOSITY-->
-  <div class="container-screen-curiosity">
-    <h2>Curiosidades</h2>
-    <p>Conoce las seis curiosidades que todo fan de Rick y Morty debería conocer 🧐📺</p>
-    <section class="screen-curiosity">
-      <article>
-        <div class="curiosity-card">
-          <div class="front"></div>
-          <div class="back" id="calOne"></div>
-        </div>
-      </article>
-      <article>
-        <div class="curiosity-card">
-          <div class="front"></div>
-          <div class="back" id="calTwo"></div>
-        </div>
-      </article>
-      <article>
-        <div class="curiosity-card">
-          <div class="front"></div>
-          <div class="back" id="calThree"></div>
-        </div>
-      </article>
-      <article>
-        <div class="curiosity-card">
-          <div class="front"></div>
-          <div class="back" id="calFour"></div>
-        </div>
-      </article>
-      <article>
-        <div class="curiosity-card">
-          <div class="front"></div>
-          <div class="back" id="calFive">
-            <p>
-              lor sit amet consectetur adipisicing elit. Hic imuam eum Hic
-              imuam eum Hic imuam eum
-            </p>
+    <main>
+      <!--SCREEN CHARACTER-->
+      <div class="container-screen-two">
+        <section class="screen-two">
+          <!-- OPCIONES DE FILTRO-->
+          <aside class="section-option">
+            <nav>
+              <button id="allCharacterBtn">Todos los personajes</button>
+              <ul class="list-opc">
+                <li class="list-origin">
+                  <input type="checkbox" name="acordeon" id="item1" />
+                  <label for="item1" class="acordeon__titulo">Origen</label>
+                  <ul class="acordeon_contenido">
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcEarth"
+                        name="origen"
+                        value="Earth (C-137)"
+                      />
+                      <label for="opcEarth">Tierra</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcEarthRD"
+                        name="origen"
+                        value="Earth (Replacement Dimension)"
+                      />
+                      <label for="opcEarthRD">Replacement<br />Dimension</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcAnatomy"
+                        name="origen"
+                        value="Anatomy Park"
+                      />
+                      <label for="opcAnatomy">Anatomy Park</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcPluto"
+                        name="origen"
+                        value="Pluto"
+                      />
+                      <label for="opcPluto">Pluto</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcNuptia"
+                        name="origen"
+                        value="Nuptia 4"
+                      />
+                      <label for="opcNuptia">Nuptia 4</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcBepis"
+                        name="origen"
+                        value="Bepis 9"
+                      />
+                      <label for="opcBepis">Bepis 9</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcInterdimensional"
+                        name="origen"
+                        value="Interdimensional Cable"
+                      />
+                      <label for="opcInterdimensional"
+                        >Interdimensional<br />Cable</label
+                      >
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcUnknownOrigen"
+                        name="origen"
+                        value="unknown"
+                      />
+                      <label for="opcUnknownOrigen">Desconocido</label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-species">
+                  <input type="checkbox" name="acordeon" id="item2" />
+                  <label for="item2" class="acordeon__titulo">Especie</label>
+                  <ul class="acordeon_contenido">
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcHuman"
+                        name="species"
+                        value="Human"
+                      />
+                      <label for="opcHuman">Humano</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcAlien"
+                        name="species"
+                        value="Alien"
+                      />
+                      <label for="opcAlien">Aliens</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcHumanoid"
+                        name="species"
+                        value="Humanoid"
+                      />
+                      <label for="opcHumanoid">Humanoide</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcPoopy"
+                        name="species"
+                        value="Poopybutthole"
+                      />
+                      <label for="opcPoopy">Poopybutthole</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcDisease"
+                        name="species"
+                        value="Disease"
+                      />
+                      <label for="opcDisease">Virus</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcRobot"
+                        name="species"
+                        value="Robot"
+                      />
+                      <label for="opcRobot">Robots</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcCronenberg"
+                        name="species"
+                        value="Cronenberg"
+                      />
+                      <label for="opcCronenberg">Cronenbergs</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcMytholog"
+                        name="species"
+                        value="Mytholog"
+                      />
+                      <label for="opcMytholog">Mitólogicos</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcAnimal"
+                        name="species"
+                        value="Animal"
+                      />
+                      <label for="opcAnimal">Animals</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcParasite"
+                        name="species"
+                        value="Parasite"
+                      />
+                      <label for="opcParasite">Parasito</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcVampire"
+                        name="species"
+                        value="Vampire"
+                      />
+                      <label for="opcVampire">Vampiros</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcUnknownSpecie"
+                        name="species"
+                        value="unknown"
+                      />
+                      <label for="opcUnknownSpecie">Desconocido</label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-gender">
+                  <input type="checkbox" name="acordeon" id="item3" />
+                  <label for="item3" class="acordeon__titulo">Gender</label>
+                  <ul class="acordeon_contenido">
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcMale"
+                        name="gender"
+                        value="Male"
+                      />
+                      <label for="opcMale">Masculino</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcFemale"
+                        name="gender"
+                        value="Female"
+                      />
+                      <label for="opcFemale">Femenino</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcGenderless"
+                        name="gender"
+                        value="Genderless"
+                      />
+                      <label for="opcGenderless">Sin género</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcUnknownGender"
+                        name="gender"
+                        value="unknown"
+                      />
+                      <label for="opcUnknownGender">Desconocido</label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-status">
+                  <input type="checkbox" name="acordeon" id="item4" />
+                  <label for="item4" class="acordeon__titulo">Status</label>
+                  <ul class="acordeon_contenido">
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcAlive"
+                        name="status"
+                        value="Alive"
+                      />
+                      <label for="opcAlive">Vivo</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcDead"
+                        name="status"
+                        value="Dead"
+                      />
+                      <label for="opcDead">Muerto</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="opcUnknownStatus"
+                        name="status"
+                        value="unknown"
+                      />
+                      <label for="opcUnknownStatus">Desconocido</label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <div class="section-characters">
+            <!-- SECCIÓN DE BUSQUEDA-->
+            <article class="search-order">
+              <input
+                type="text"
+                id="inputSearch"
+                placeholder="Busca tu personaje favorito"
+              />
+              <div class="order-option">
+                <h4>Ordena por:</h4>
+                <button id="A-Z">A-Z</button>
+                <button id="Z-A">Z-A</button>
+              </div>
+            </article>
+            <!-- CONTAINER CHARACTER -->
+            <article class="list" id="list"></article>
+            <div id="pagination"></div>
           </div>
-        </div>
-      </article>
-      <article>
-        <div class="curiosity-card">
-          <div class="front"></div>
-          <div class="back">
-            <p>
-              La serie cuenta con 4 temporadas y se especula que la quinta saldrá a fines del 2021.
-            </p>
-          </div>
-        </div>
-      </article>
-    </section>
-  </div>
-  <!--SCREEN RES AND EPI-->
-    <section class="container-screen-resumen">
+        </section>
+      </div>
+      <!--SCREEN CURIOSITY-->
+      <div class="container-screen-curiosity">
+        <h2>Curiosidades</h2>
+        <p>
+          Conoce las seis curiosidades que todo fan de Rick y Morty debería
+          conocer 🧐📺
+        </p>
+        <section class="screen-curiosity">
+          <article>
+            <div class="curiosity-card">
+              <div class="front"></div>
+              <div class="back" id="calOne"></div>
+            </div>
+          </article>
+          <article>
+            <div class="curiosity-card">
+              <div class="front"></div>
+              <div class="back" id="calTwo"></div>
+            </div>
+          </article>
+          <article>
+            <div class="curiosity-card">
+              <div class="front"></div>
+              <div class="back" id="calThree"></div>
+            </div>
+          </article>
+          <article>
+            <div class="curiosity-card">
+              <div class="front"></div>
+              <div class="back" id="calFour"></div>
+            </div>
+          </article>
+          <article>
+            <div class="curiosity-card">
+              <div class="front"></div>
+              <div class="back" id="calFive">
+                <p>
+                  lor sit amet consectetur adipisicing elit. Hic imuam eum Hic
+                  imuam eum Hic imuam eum
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="curiosity-card">
+              <div class="front"></div>
+              <div class="back">
+                <p>
+                  La serie cuenta con 4 temporadas y se especula que la quinta
+                  saldrá a fines del 2021.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <!--SCREEN RES AND EPI-->
+      <section class="container-screen-resumen">
         <ul class="slider">
           <li>
             <input type="radio" id="btn01" name="sradio" checked />
@@ -279,7 +440,14 @@
             <article class="resumen-video">
               <h2>Resumen de episodios 🎬</h2>
               <figure class="event-imageContainer">
-                <!--<iframe width="600" height="330" src="https://www.youtube.com/embed/8sZ47syV-Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <iframe
+                  width="600"
+                  height="330"
+                  src="https://www.youtube.com/embed/8sZ47syV-Wo"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </figure>
               <p>
                 Si deseas ver la serie completa,
@@ -288,9 +456,8 @@
             </article>
           </li>
         </ul>
-    </section>
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
-</body>
-
+      </section>
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
