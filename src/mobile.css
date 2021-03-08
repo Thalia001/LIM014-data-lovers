@@ -1,0 +1,205 @@
+@media screen and (max-width: 1023px) {
+  /**..SCREEN-ONE..**/
+  .text-welcome {
+    left: 0;
+  }
+  /**..SCREEN-TWO..**/
+  .screen-two {
+    grid-template-columns: 20% 70%;
+    gap: 70px;
+  }
+  .screen-two .section-option nav ul {
+    padding-right: 10px;
+  }
+  main .screen-two .section-characters .search-order {
+    margin: 40px 10px;
+  }
+  /**..SCREEN-RESUMEN..**/
+  main .slider {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /*......HEADER......*/
+  header ul li a {
+    font-size: 17px;
+  }
+  /**..SCREEN-ONE..**/
+  .video-welcome video {
+    position: relative;
+    right: 400px;
+  }
+  .text-welcome {
+    margin-top: -15px;
+    margin: 0 20px;
+  }
+
+  /**..SCREEN-TWO..**/
+  .screen-two {
+    grid-template-columns: 15% 63%;
+    gap: 150px;
+  }
+  main .screen-two .list .characterCard {
+    width: 330px;
+    height: 200px;
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 150px 180px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main .screen-two .list .characterCard img {
+    width: 140px;
+    height: 130px;
+    border-radius: 1px;
+    margin-top: 10px;
+  }
+  main .screen-two .list .characterCard h2 {
+    margin: 0;
+  }
+  main .screen-two .section-characters .search-order {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  main .screen-two .section-characters .search-order input {
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  main .screen-two .section-characters .search-order .order-option {
+    margin: 0;
+  }
+  /**..SCREEN-RESUMEN..**/
+  main .slider .resumen-text {
+    font-size: 17px;
+  }
+  main .slider .resumen-video figure {
+    margin: 50px 40px;
+  }
+  main .slider .resumen-video figure iframe {
+    width: 450px;
+    height: 250px;
+  }
+  /**..SCREEN-CURIOSITY..**/
+  main .container-screen-curiosity h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /**..SCREEN-ONE..**/
+  .video-welcome video {
+    position: relative;
+    right: 520px;
+  }
+  /*header menu hamburguesa*/
+  header label {
+    display: block;
+  }
+  header h1 {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  header .menu {
+    width: 100%;
+    height: 100%;
+    padding-top: 280px;
+    background: rgba(0, 0, 0, 0.95);
+    margin-left: -100%;
+    transition: all 0.7s;
+    position: fixed;
+    top: 50px;
+    z-index: 1000;
+    border-top: 1px solid #3da29e;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  header .menu li a {
+    text-align: center;
+    font-size: 25px;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  /*Main*/
+  main {
+    padding-top: 50px;
+  }
+  /*Screen-Two*/
+  .screen-two {
+    display: grid;
+    grid-template-columns: 460px;
+    justify-content: center;
+    gap: 10px;
+    grid-template-areas: "section-option" "section-characters";
+  }
+  .screen-two .section-option nav ul li ul label:before {
+    display: none;
+  }
+  .screen-two .section-option nav ul li ul label {
+    padding: 0;
+  }
+  .screen-two .section-option nav {
+    width: 100%;
+  }
+  .screen-two .section-option nav .list-opc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .acordeon__titulo {
+    font-size: 15px;
+    text-align: center;
+  }
+  .acordeon__titulo:hover {
+    background-color: rgba(9, 144, 92, 0.7);
+    border-radius: 5px;
+  }
+  .acordeon_contenido {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 0.5s;
+  }
+  .screen-two .section-option nav ul li input:checked ~ .acordeon_contenido {
+    height: auto;
+    margin: 15px 0;
+  }
+  .screen-two .section-option nav button {
+    width: 170px;
+    margin: 20px 140px;
+  }
+  /*.SCREEN-RESUMEN*/
+  main .slider .resumen-text {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+  main .slider .resumen-text .author img {
+    width: 120px;
+    height: 100px;
+    margin: 40px 5px 40px 0;
+  }
+  main .slider .resumen-text .author span {
+    font-weight: lighter;
+    letter-spacing: 1.2px;
+  }
+  main .slider .resumen-text h2 {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  main .slider .resumen-video h2 {
+    font-size: 25px;
+    margin-top: 35px;
+  }
+  main .slider .resumen-video figure iframe {
+    width: 300px;
+    height: 200px;
+  }
+  main .slider .resumen-video figure {
+    margin-top: 85px;
+  }
+  main .slider .resumen-video p {
+    font-size: 18px;
+  }
+}
