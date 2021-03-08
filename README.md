@@ -15,27 +15,27 @@ Nuestra página va dirigida a un público de entre 18 a 40 años que esta comenz
 
 
 ## Boceto de papel
-![prototipo 1](./src/imagenes/prototipo1.png)
-![prototipo 2](./src/imagenes/prototipo2.png)
+![prototipo 1](https://i.ibb.co/ZWRPdqY/prototipo1.png)
+![prototipo 2](https://i.ibb.co/Q61qvyy/prototipo2.png)
 
 ## Maqueta Base
 
-![maqueta base](./src/imagenes/maquetabase.png)
-![maqueta base](./src/imagenes/maquetabaseapp.png)
+![maqueta base](https://i.ibb.co/5FvcVSB/maquetabase.png)
+![maqueta base](https://i.ibb.co/PWTV4pX/maquetabaseapp.png)
 
 ## Maqueta Base-Prueba
 
-![maqueta base-prueba](./scr/imagenes/maquetabase-prueba.png)
-![maqueta base-prueba](./scr/imagenes/maquetabase-pruebaweb.png)
+![maqueta base-prueba](https://i.ibb.co/5XQwkGR/maquetabase-prueba.png)
+![maqueta base-prueba](https://i.ibb.co/XpDSvXT/maquetabase-pruebaweb.png)
 
 ## Maqueta Base-Prueba final
 
-![maqueta base-prueba final](.src/imagenes/maquetabase-pruebafinal.png)
-![maqueta base-prueba final](./src/imagenes/maquetabase-pruebafinalweb.png)
+![maqueta base-prueba final](https://i.ibb.co/0shLXcn/maquetabase-pruebafinal.png)
+![maqueta base-prueba final](https://i.ibb.co/QdsgQFq/maquetabase-pruebafinalweb.png)
 
 ## Maqueta Final
 
-![maqueta final](./src/imagenes/maquetafinal.png)
+![maqueta final](https://i.ibb.co/yyWMwG1/maquetafinalpersonajes.png)
 
 ## Diseño de la Interfaz de usuario
 Diseño creado en Figma.
