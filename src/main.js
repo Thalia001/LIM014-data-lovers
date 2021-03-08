@@ -371,3 +371,40 @@ const calculateFive = (data) => {
   en diferentes locaciones y son de diferente origen </p>`;
 };
 calculateFive(getAllData);
+
+//PAGINACIÓN
+
+const paginate = (data) => {
+    let numberItems = data.length;
+    let numberPages = Math.ceil(numberItems / charactersByPage);
+  
+    currentPage = numberPages > 0 ? 1 : currentPage;
+    document.getElementById("pagination").innerHTML = "";
+    for (let i = 1; i <= numberPages; i++) {
+      let page = document.createElement('a');
+      page.setAttribute('href', '#');
+      page.innerHTML = `${i}`;
+  
+      page.addEventListener("click", () => {
+        charactersPagination = filterCharactersByPage(data, i, charactersByPage);
+        renderCharacterData(charactersPagination);
+      })
+  
+      document.getElementById("pagination").appendChild(page);
+    }
+  }
+  
+  const init = (data) => {
+    paginate(data);
+  
+    if (currentPage > 0) {
+      charactersPagination = filterCharactersByPage(data, currentPage, charactersByPage);
+      renderCharacterData(charactersPagination);
+    }
+  }
+  // Cantidad de carácteres mostrados por página
+  const filterCharactersByPage = (data, page, numberItemsByPage) => {
+
+    return data.filter((val, i) => i < page * numberItemsByPage && i >= page * numberItemsByPage - numberItemsByPage);
+  
+  }
