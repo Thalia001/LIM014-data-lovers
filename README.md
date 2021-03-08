@@ -13,28 +13,29 @@ Nuestra página va dirigida a un público de entre 18 a 40 años que esta comenz
  
 ## Screenshots del Proceso de Diseño.
 
+
 ## Boceto de papel
-![prototipo 1](./src/img/prototipo1.png)
-![prototipo 2](./src/img/prototipo2.png)
+![prototipo 1](./src/imagenes/prototipo1.png)
+![prototipo 2](./src/imagenes/prototipo2.png)
 
 ## Maqueta Base
 
-![maqueta base](./src/img/maquetabase.png)
-![maqueta base](./src/img/maquetabaseapp.png)
+![maqueta base](./src/imagenes/maquetabase.png)
+![maqueta base](./src/imagenes/maquetabaseapp.png)
 
 ## Maqueta Base-Prueba
 
-![maqueta base-prueba](./scr/img/maquetabase-prueba.png)
-![maqueta base-prueba](./scr/img/maquetabase-pruebaweb.png)
+![maqueta base-prueba](./scr/imagenes/maquetabase-prueba.png)
+![maqueta base-prueba](./scr/imagenes/maquetabase-pruebaweb.png)
 
 ## Maqueta Base-Prueba final
 
-![maqueta base-prueba final](.src/img/maquetabase-pruebafinal.png)
-![maqueta base-prueba final](./src/img/maquetabase-pruebafinalweb.png)
+![maqueta base-prueba final](.src/imagenes/maquetabase-pruebafinal.png)
+![maqueta base-prueba final](./src/imagenes/maquetabase-pruebafinalweb.png)
 
 ## Maqueta Final
 
-![maqueta final](./src/img/maquetafinal.png)
+![maqueta final](./src/imagenes/maquetafinal.png)
 
 ## Diseño de la Interfaz de usuario
 Diseño creado en Figma.
